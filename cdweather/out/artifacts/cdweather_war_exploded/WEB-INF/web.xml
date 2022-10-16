@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+
+    <servlet>
+        <servlet-name>ShowServlet</servlet-name>
+        <servlet-class>controllers.ShowServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ShowServlet</servlet-name>
+        <url-pattern>/ShowServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>yearDataServlet</servlet-name>
+        <servlet-class>controllers.yearDataServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>yearDataServlet</servlet-name>
+        <url-pattern>/yearDataServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
